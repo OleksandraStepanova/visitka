@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@600;400;500&family=Mulish:ital,wght@700&family=Poppins:ital,wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="header-container">
+            <nav class="page-navigation">
+                <a class="page-logo" href="./index.html">
+                    <svg class="logo">
+                        <use href="./image/icone.svg#icon-logo"></use>
+                    </svg>      
+                </a>
+                <ul class="menu">
+                    <li class="menu-item"><a class="menu-link" href="./index.html">главная</a></li>
+                    <li class="menu-item"><a class="menu-link" href="">обо мне</a></li>
+                    <li class="menu-item"><a class="menu-link" href="">специализация</a></li>
+                    <li class="menu-item"><a class="menu-link" href="">курс</a></li>
+                    <li class="menu-item"><a class="menu-link" href="">стоимость</a></li>
+                    <li class="menu-item"><a class="menu-link" href="">контакты</a></li>
+                </ul>    
+            </nav>
+            <div class="mobile-menu">
+                <button class="mobile-menu-btn" type="button">
+                    <svg width="24" height="24">
+                        <use href="./image/icone.svg#icon-burger"></use>
+                    </svg>
+                </button>
+            </div>           
+        
+        </div>
+    
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-container">
+                <picture class="hero-image">
+                    <source srcset="./image/hero-photo-desktop.png" media="(min-width: 848px)">
+                    <source srcset="./image/hero-photo-mobile.png" media="(max-width: 767px)">
+                    <img src="./image/flowers.png" alt="Photo hero">
+                </picture>
+                <div class="hero-wrapper">
+                    <h1 class="main-title">Телесно терапевтические практики в Италии</h1>
+                    <p class="hero-descriotion">Знакомство с твоим личным источником энергии</p>
+                    <a class="page-button" href="https://www.instagram.com/tomamitrizkaya/?igsh=eTVrcThjc3BneXhh">Связаться со мной</a>
+                </div>
+            </div>        
+        </section>
+        <section class="call">
+            <div class="container">
+                <h2 class="visually-hidden">Section #2</h2>
+                <p>Вопрос или проблема, мучающие Вас годами?</p>
+                <p>решение есть!</p>
+        </section>
+        <section class="about-me">
+            <div class="container">
+                <picture>
+                    <source srcset="./image/personal-photo-desktop.png" media="(min-width: 848px)">
+                    <source srcset="./image/personal-photo-mobile.png" media="(max-width: 767px)">
+                    <img class="case-image" src="./image/personal-photo-mobile.png" alt="Personal photo">
+                </picture>
+                <h2 class="section-title">Давайте познакомимся</h2>
+                <h3>Я - Митрицкая Тамара:</h3>
+                <ul class="skills-list">
+                    <li class="skills-item">энергопрактик и ведущая женских кругов c 2013 года</li>
+                    <li class="skills-item">мастер танца "Мандала", МАК, таро</li>
+                    <li class="skills-item">мастер сакрально - терапевтического пеленания</li>
+                    <li class="skills-item">автор курса для женщин "9 занятий меняющие жизнь"</li>
+                    <li class="skills-item">обладаю даром яснообразности, ясночувствования</li>
+                </ul>
+               
+        </section>
+        <section class="specialization">
+            <div class="container">
+                <h2 class="section-title">Моя специализация</h2>
+                <ul class="specialization-list">
+                   <li class="specialization-item"><div>1</div>Сакрально - терапевтическое пеленание</li>
+                   <li class="specialization-item"><div>2</div>Курс по обучению танцу "Мандала"</li>
+                   <li class="specialization-item"><div>3</div>Онлайн программа для женщин - "9 занятий, меняющих жизнь"</li>
+                </ul>        
+        </section>
+        <section class="course">
+            <picture>
+                <source srcset="./image/flowers.png"
+                    media="(min-width: 768px)" width="852">
+                <source srcset="./image/flowers.png"
+                    media="(max-width: 767px)" width="218">
+                <img class="case-image" src="./image/flowers.png" alt="Flowers" width="218">
+            </picture>
+            <div class="container">
+                <h2 class="section-title">Онлайн программа для женщин</h2>
+                <p>"9 занятий, меняющих жизнь"</p>
+                <h2>Навыки, которые вы приобретете на программе:</h2>
+                <ul class="course-list">
+                    <li class="course-item">
+                        <div>
+                            <svg width="21" height="16">
+                                <use href="./images/icons.svg#icon-diagram"></use>
+                            </svg>
+                        </div>
+                        очищения от негативных эмоций, деструктивных отношений и прошлых связей
+                    </li>
+                    <li class="course-item">
+                        <div>
+                            <svg width="21" height="16">
+                                <use href="./images/icons.svg#icon-diagram"></use>
+                            </svg>
+                        </div>
+                        создания качественных отношения в семье и социуме
+                    </li>
+                    <li class="course-item">
+                        <div>
+                            <svg width="21" height="16">
+                                <use href="./images/icons.svg#icon-diagram"></use>
+                            </svg>
+                        </div>
+                        планирования женского календаря
+                    </li>
+                    <li class="course-item">
+                        <div>
+                            <svg width="21" height="16">
+                                <use href="./images/icons.svg#icon-diagram"></use>
+                            </svg>
+                        </div>
+                        открытия интуиции
+                    </li>
+                    <li class="course-item">
+                        <div>
+                            <svg width="21" height="16">
+                                <use href="./images/icons.svg#icon-diagram"></use>
+                            </svg>
+                        </div>
+                        отслеживания источника денежного потока
+                    </li>
+                </ul>
+        </section>
+        <section class="price">
+            <div class="container">
+                <h2 class="section-title">Стоимость</h2>
+                <ul class="price-list">
+                   <li class="price-item">
+                    <div>Сакрально - терапевтическое пеленание</div>
+                    <div>
+                        <ul class="benefits-list">
+                            <li class="benefits-item">1 занятие</li>
+                            <li class="benefits-item">После сдачи экзамена получаете сертификат</li>
+                        </ul>
+                    </div>
+                    <div class="price-cours">180&#8364</div>
+                   </li>                 
+                    <li class="price-item">
+                        <div>Онлайн - программа "9 занятий, меняющих жизнь"</div>
+                        <div>
+                            <ul class="benefits-list">
+                                <li class="benefits-item">9 практикумов</li>
+                                <li class="benefits-item">Высылаются в записи, телеграмм поддержка и общение с ведущей</li>
+                            </ul>
+                        </div>
+                        <div class="price-cours">150&#8364</div>
+                    </li>
+                    <li class="price-item">
+                        <div>Обучению танцу "Мандала"</div>
+                        <div>
+                            <ul class="benefits-list">
+                                <li class="benefits-item">14 занятий</li>
+                                <li class="benefits-item">После сдачи экзамена получаете сертификат</li>
+                            </ul>
+                        </div>
+                        <div class="price-cours">200&#8364</div>
+                    </li>                   
+                </ul>
+                <p>&#42</p>
+                <p class="loyalty">Для тех женщин, которые живут на пенсию по инвалидности или по уходу за детьми всегда есть скидки! Для желающих
+                организовать тренинг в своем городе, тарифы и цены обговариваются индивидуально. 1 час индивидуальной консультации - 50€</p>
+        </section>
+        <section class="conclusion">
+            <div class="container">
+                <h2 class="section-title">Ваша жизнь в Ваших руках!</h2>
+                <p>Давайте еЁ творить вместе!</p>
+                <a class="page-button">Связаться со мной</a>
+        </section>
+        <footer class="page-footer">
+            <picture>
+                <source srcset="./image/flowers-footer-desktop.png" media="(min-width: 768px)" width="852">
+                <source srcset="./image/flowers-footer-mobil.png media="(max-width: 767px)" width="206">
+                <img class="case-image" src="./image/flowers-footer-mobil.png" alt="Flowers" width="206">
+            </picture>
+            <div class="container">
+                <address>
+                    <ul class="page-contacts">
+                        <li><a class="contacts" href="tel:+393278266063">+39 327 826 6063</a></li>
+                        <li><a class="contacts" href="mailto:sovatoma2004@gmail.com">sovatoma2004@gmail.com</a></li>
+                    </ul>
+                </address>
+                <nav class="page-navigation">
+                    <ul class="menu">
+                        <li class="menu-item"><a class="menu-link" href="./index.html">главная</a></li>
+                        <li class="menu-item"><a class="menu-link" href="">обо мне</a></li>
+                        <li class="menu-item"><a class="menu-link" href="">специализация</a></li>
+                        <li class="menu-item"><a class="menu-link" href="">курс</a></li>
+                        <li class="menu-item"><a class="menu-link" href="">стоимость</a></li>
+                        <li class="menu-item"><a class="menu-link" href="">контакты</a></li>
+                    </ul>                
+                </nav>
+                
+                <div class="social-media">                   
+                    <ul class="social-networks">
+                        <li class="social-networks-item">
+                            <a class="social-networks-link" href="https://web.telegram.org/a/#630226363" target="_blank">
+                                <svg class="social-networks-icon" height="30" width="30">
+                                    <use href="./image/icone.svg#icon-Icon01"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-networks-item">
+                            <a class="social-networks-link" href="+39 327 826 6063" target="_blank">
+                                <svg class="social-networks-icon" height="30" width="30">
+                                    <use href="./image/icone.svg#con-Icon02"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-networks-item">
+                            <a class="social-networks-link" href="https://www.youtube.com/@tomamitrizkaya9370" target="_blank">
+                                <svg class="social-networks-icon" height="30" width="30">
+                                    <use href="./image/icone.svg#icon-Icon03"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-networks-item">
+                            <a class="social-networks-link" href="https://www.facebook.com/tamara.mitrizkaya?sfnsn=mo" target="_blank">
+                                <svg class="social-networks-icon" height="30" width="30">
+                                    <use href="./image/icone.svg#icon-Icon04"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-networks-item">
+                            <a class="social-networks-link" href="https://www.instagram.com/tomamitrizkaya/?igsh=eTVrcThjc3BneXhh" target="_blank">
+                                <svg class="social-networks-icon" height="30" width="30">
+                                    <use href="./image/icone.svg#icon-Icon05"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>                
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

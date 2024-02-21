@@ -204,7 +204,7 @@ img {
         #faf1f1 0%,
         rgba(250, 241, 241, 0) 100%
       ),
-      url(../image/hero-mobile.jpg);
+      url(./image/hero-mobile.jpg);
     background-size: cover;
     min-width: 400px;
   }
@@ -217,7 +217,7 @@ img {
         #faf1f1 0%,
         rgba(250, 241, 241, 0) 100%
       ),
-      url(../image/hero-desktop.jpg);
+      url(./image/hero-desktop.jpg);
     background-size: cover;
     background-position: center center;
   }

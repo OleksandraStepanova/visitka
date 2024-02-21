@@ -96,6 +96,7 @@ img {
 }
 /* Hero */
 .hero-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding-top: 548px;
@@ -103,8 +104,8 @@ img {
   min-width: 340px;
 }
 .hero-image {
-  width: 100%;
   position: absolute;
+  width: 100%;
   left: 0;
   top: 90px;
 }

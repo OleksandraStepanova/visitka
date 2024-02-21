@@ -1,7 +1,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   color: #3d3d3f;
-  background-color: #e2e1f3;
+  background-color: #faf0f0;
 }
 
 h1,
@@ -63,9 +63,6 @@ img {
   line-height: 1.2;
   letter-spacing: 0.04em;
   text-align: center;
-  text-transform: capitalize;
-  margin-bottom: 72px;
-  font-family: "Montserrat", sans-serif;
 }
 /* Header */
 .page-header {
@@ -97,20 +94,23 @@ img {
   cursor: pointer;
   margin-left: 160px;
 }
-
+/* Hero */
 .hero-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 99px 0;
+  padding-top: 548px;
+  padding-bottom: 84px;
+  min-width: 340px;
 }
 .hero-image {
-  max-width: 340px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 90px;
 }
 
 .hero-wrapper {
-  padding: 50px 16px;
+  padding: 50px 16px 0;
 }
 .main-title {
   font-weight: 600;
@@ -132,7 +132,6 @@ img {
 .page-button {
   font-family: "Mulish", sans-serif;
   border: 0.86px solid rgba(255, 255, 255, 0.9);
-
   border-radius: 17px;
   max-width: 160px;
   height: auto;
@@ -145,6 +144,54 @@ img {
   color: #fff;
   padding: 8px 27px;
 }
+
+/* Call */
+
+.call {
+  background-color: rgba(226, 225, 243, 0.71);
+  padding: 32px 0;
+  min-width: 400px;
+}
+
+.call-text {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.3;
+  text-align: center;
+  color: #3d3d3f;
+  margin-bottom: 12px;
+}
+
+.call-text-answer {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.1;
+  text-align: center;
+  color: #3d3d3f;
+}
+
+/* About me */
+
+.about-me {
+  padding: 80px 0;
+}
+
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.personal-photo {
+  margin-bottom: 40px;
+}
+
+.about-me-title {
+  color: #fd695a;
+  text-align: left;
+}
+
 @media (max-width: 767px) {
   .menu {
     display: none;
@@ -172,5 +219,6 @@ img {
       ),
       url(../image/hero-desktop.jpg);
     background-size: cover;
+    background-position: center center;
   }
 }

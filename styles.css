@@ -320,9 +320,9 @@ header {
     max-width: 580px;
     padding: 100px 32px;
   }
-  .hero-image {
+  /* .hero-image {
     max-width: 640px;
-  }
+  } */
   .main-title {
     font-size: 68px;
     width: 640px;
@@ -364,9 +364,7 @@ header {
   .hero-container {
     max-width: 1440px;
   }
-  .hero-image {
-    width: 848px;
-  }
+
   .hero-wrapper {
     max-width: 800px;
   }

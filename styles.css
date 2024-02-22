@@ -285,6 +285,16 @@ header {
     font-size: 12px;
     padding: 10px 33px;
   }
+
+  /* Call */
+  .call-text {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+
+  .call-text-answer {
+    font-size: 50px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -320,9 +330,7 @@ header {
     max-width: 580px;
     padding: 100px 32px;
   }
-  /* .hero-image {
-    max-width: 640px;
-  } */
+
   .main-title {
     font-size: 68px;
     width: 640px;
@@ -373,6 +381,19 @@ header {
     width: 787px;
     margin-bottom: 51px;
   }
+
+  
+  /* Call */
+  .call-text {
+    font-size: 50px;
+    margin-bottom: 14px;
+  }
+
+  .call-text-answer {
+    font-size: 24px;
+  }
+}
+
 }
 @media screen and (max-width: 1279px) {
   .hero {

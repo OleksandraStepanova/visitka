@@ -104,14 +104,14 @@ header {
   padding-top: 90px;
   padding-bottom: 84px;
 }
-.hero-image {
-  align-self: flex-start;
+.photo {
   width: 100%;
-  object-fit: cover;
+  height: 100%;
 }
 
 .hero-wrapper {
   padding: 50px 16px 0;
+  width: 100%;
 }
 .main-title {
   font-weight: 600;

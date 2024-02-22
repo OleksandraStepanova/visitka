@@ -142,7 +142,8 @@ header {
   transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .page-button:hover,
-.page-button:focus {
+.page-button:focus,
+.page-button:active {
   background-color: #fd695a;
   background-image: none;
   font-weight: 700;

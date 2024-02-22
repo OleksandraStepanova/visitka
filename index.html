@@ -23,11 +23,11 @@
                 </a>
                 <ul class="menu">
                     <li class="menu-item"><a class="menu-link" href="./index.html">главная</a></li>
-                    <li class="menu-item"><a class="menu-link" href="">обо мне</a></li>
-                    <li class="menu-item"><a class="menu-link" href="">специализация</a></li>
-                    <li class="menu-item"><a class="menu-link" href="">курс</a></li>
-                    <li class="menu-item"><a class="menu-link" href="">стоимость</a></li>
-                    <li class="menu-item"><a class="menu-link" href="">контакты</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#about-me">обо мне</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#specialization">специализация</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#course">курс</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#price">стоимость</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#contacts">контакты</a></li>
                 </ul>    
             </nav>
             <div class="mobile-menu">
@@ -42,11 +42,11 @@
     
     </header>
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="hero-container">
                 <picture class="hero-image">
-                    <source srcset="./image/hero-photo-desktop.png" media="(min-width: 768px)">
-                    <source srcset="./image/hero-photo-mobile.png" media="(max-width: 767px)">
+                    <source srcset="./image/hero-photo-desktop.png" media="(min-width: 1280px)" width="846">
+                    <source srcset="./image/hero-photo-mobile.png" media="(max-width: 1279px)">
                     <img src="./image/flowers.png" alt="Photo hero">
                 </picture>
                 <div class="hero-wrapper">
@@ -62,11 +62,11 @@
                 <p class="call-text">Вопрос или проблема, мучающие Вас годами?</p>
                 <p class="call-text-answer">Решение есть!</p>
         </section>
-        <section class="about-me">
+        <section class="about-me" id="about-me">
             <div class="container about-me-container">
                 <picture class="personal-photo">
-                    <source srcset="./image/personal-photo-desktop.png" media="(min-width: 848px)">
-                    <source srcset="./image/personal-photo-mobile.png" media="(max-width: 767px)">
+                    <source srcset="./image/personal-photo-desktop.png" media="(min-width: 848px)" width="280">
+                    <source srcset="./image/personal-photo-mobile.png" media="(max-width: 767px)" width="280">
                     <img class="case-image" src="./image/personal-photo-mobile.png" alt="Personal photo">
                 </picture>
                 <h2 class="section-title  about-me-title">Давайте познакомимся</h2>
@@ -80,7 +80,7 @@
                 </ul>
                
         </section>
-        <section class="specialization">
+        <section class="specialization" id="specialization">
             <div class="container">
                 <h2 class="section-title">Моя специализация</h2>
                 <ul class="specialization-list">
@@ -89,10 +89,10 @@
                    <li class="specialization-item"><div>3</div>Онлайн программа для женщин - "9 занятий, меняющих жизнь"</li>
                 </ul>        
         </section>
-        <section class="course">
+        <section class="course" id="course">
             <picture>
                 <source srcset="./image/flowers.png"
-                    media="(min-width: 768px)" width="852">
+                    media="(min-width: 768px)" width="280">
                 <source srcset="./image/flowers.png"
                     media="(max-width: 767px)" width="218">
                 <img class="case-image" src="./image/flowers.png" alt="Flowers" width="218">
@@ -144,7 +144,7 @@
                     </li>
                 </ul>
         </section>
-        <section class="price">
+        <section class="price" id="price">
             <div class="container">
                 <h2 class="section-title">Стоимость</h2>
                 <ul class="price-list">
@@ -191,12 +191,12 @@
         </section>
         <footer class="page-footer">
             <picture>
-                <source srcset="./image/flowers-footer-desktop.png" media="(min-width: 768px)" width="852">
-                <source srcset="./image/flowers-footer-mobil.png media="(max-width: 767px)" width="206">
+                <source srcset="./image/flowers-footer-desktop.png" media="(min-width: 768px)" width="280">
+                <source srcset="./image/flowers-footer-mobil.png" media="(max-width: 767px)" width="206">
                 <img class="case-image" src="./image/flowers-footer-mobil.png" alt="Flowers" width="206">
             </picture>
             <div class="container">
-                <address>
+                <address id="contacts">
                     <ul class="page-contacts">
                         <li><a class="contacts" href="tel:+393278266063">+39 327 826 6063</a></li>
                         <li><a class="contacts" href="mailto:sovatoma2004@gmail.com">sovatoma2004@gmail.com</a></li>

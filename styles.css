@@ -65,22 +65,19 @@ img {
   text-align: center;
 }
 /* Header */
-.page-header {
-  max-width: 752px;
+header {
   position: absolute;
-  top: 0;
-  left: 16px;
-  right: 16px;
-  z-index: 99999;
-  margin-top: 16px;
-  margin-left: auto;
-  margin-right: auto;
+  left: 0;
+  right: 0;
 }
-
 .header-container {
+  max-width: 752px;
+  padding: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: transparent;
+  margin: 0 auto;
 }
 
 .logo {
@@ -96,18 +93,13 @@ img {
 }
 /* Hero */
 .hero-container {
-  position: relative;
   display: flex;
   flex-direction: column;
-  padding-top: 548px;
+  padding-top: 90px;
   padding-bottom: 84px;
-  min-width: 340px;
 }
 .hero-image {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 90px;
+  align-self: center;
 }
 
 .hero-wrapper {
@@ -151,7 +143,7 @@ img {
 .call {
   background-color: rgba(226, 225, 243, 0.71);
   padding: 32px 0;
-  min-width: 400px;
+  width: 100%;
 }
 
 .call-text {
@@ -198,7 +190,173 @@ img {
     display: none;
   }
 }
-@media screen and (max-width: 339px) {
+@media (min-width: 768px) {
+  /* Header */
+  .header-container {
+    max-width: 768px;
+  }
+
+  .page-navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo {
+    width: 201px;
+    height: 43.5px;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin-left: 32px;
+  }
+
+  .menu-link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #3d3d3f;
+    padding: 20px 0;
+    align-items: center;
+    overflow: hidden;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu-link:active {
+    color: #fd695a;
+  }
+  .menu-item:first-child .menu-link {
+    color: #fd695a;
+  }
+  .mobile-menu {
+    display: none;
+  }
+
+  /* Hero */
+
+  .hero-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 90px;
+    padding-bottom: 84px;
+    margin: 0 auto;
+  }
+  .hero-image {
+    align-self: center;
+  }
+
+  .hero-wrapper {
+    padding: 50px 32px 0;
+  }
+  .main-title {
+    font-size: 36px;
+    width: 360px;
+  }
+
+  .hero-descriotion {
+    font-size: 16px;
+  }
+  .page-button {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 24px;
+    max-width: 196px;
+    box-shadow: 0 3px 3px 0 rgba(61, 61, 63, 0.1);
+    font-size: 12px;
+    padding: 10px 33px;
+  }
+}
+
+@media (min-width: 1280px) {
+  /* Header */
+
+  .header-container {
+    max-width: 1248px;
+    padding-top: 67px;
+  }
+
+  .logo {
+    width: 270px;
+    height: 50px;
+  }
+  .menu {
+    width: 796px;
+    margin-left: 120px;
+  }
+  .menu-link {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+
+  /* Hero */
+
+  .hero-container {
+    padding-top: 148px;
+    padding-bottom: 148px;
+    justify-content: center;
+  }
+
+  .hero-wrapper {
+    max-width: 580px;
+    padding: 100px 32px;
+  }
+  .hero-image {
+    max-width: 640px;
+  }
+  .main-title {
+    font-size: 68px;
+    width: 640px;
+    margin-bottom: 51px;
+  }
+
+  .hero-descriotion {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.3;
+    width: 540px;
+    margin-bottom: 51px;
+  }
+  .page-button {
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 40px;
+    max-width: 250px;
+    box-shadow: 0 4px 4px 0 rgba(61, 61, 63, 0.1);
+    font-size: 20px;
+    padding: 16px 48px;
+  }
+}
+@media (min-width: 1440px) {
+  /* Header */
+  .header-container {
+    max-width: 1440px;
+  }
+  .menu {
+    width: 830px;
+    margin-left: 280px;
+  }
+  .menu-item {
+  }
+  .menu-link {
+    font-size: 16px;
+    padding-top: 67px;
+  }
+  /* Hero */
+  .hero-container {
+    max-width: 1440px;
+  }
+  .hero-image {
+    width: 848px;
+  }
+  .hero-wrapper {
+    max-width: 800px;
+  }
+  .main-title {
+    font-size: 70px;
+    width: 787px;
+    margin-bottom: 51px;
+  }
+}
+@media screen and (max-width: 1279px) {
   .hero {
     background-image: linear-gradient(
         360deg,
@@ -207,11 +365,12 @@ img {
       ),
       url(./image/hero-mobile.jpg);
     background-size: cover;
-    min-width: 400px;
+    background-position: center center;
+    width: 100%;
   }
 }
 
-@media screen and (min-width: 340px) {
+@media screen and (min-width: 1280px) {
   .hero {
     background-image: linear-gradient(
         360deg,
@@ -221,5 +380,6 @@ img {
       url(./image/hero-desktop.jpg);
     background-size: cover;
     background-position: center center;
+    width: 100%;
   }
 }

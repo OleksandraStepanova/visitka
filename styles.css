@@ -332,13 +332,13 @@ header {
   }
 
   .main-title {
-    font-size: 68px;
+    font-size: 32px;
     width: 640px;
     margin-bottom: 51px;
   }
 
   .hero-descriotion {
-    font-size: 32px;
+    font-size: 50px;
     font-weight: 500;
     line-height: 1.3;
     width: 540px;
@@ -390,7 +390,7 @@ header {
   }
 
   .call-text-answer {
-    font-size: 24px;
+    font-size: 50px;
   }
 }
 

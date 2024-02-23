@@ -47,7 +47,7 @@ img {
   margin-right: auto;
   margin-left: auto;
   min-width: 280px;
-  padding: 0 16px 0 16px;
+  padding: 0 16px;
 }
 
 .visually-hidden {
@@ -187,7 +187,7 @@ header {
 /* About me */
 
 .about-me {
-  padding: 80px 0;
+  padding: 80px 0 50px;
 }
 
 .about-me-container {
@@ -201,8 +201,64 @@ header {
 }
 
 .about-me-title {
+  position: relative;
   color: #fd695a;
   text-align: left;
+  margin-bottom: 30px;
+}
+.about-me-title::after {
+  width: 307px;
+  height: 2px;
+  content: "";
+  background-image: linear-gradient(
+    90deg,
+    #fd695a 0%,
+    rgba(255, 162, 164, 0) 100%
+  );
+  border-radius: 7px;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+}
+.about-me-name {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: #3d3d3f;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-left: 16px;
+}
+.skills-item {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #3d3d3f;
+  position: relative;
+}
+
+.skills-item::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  background-color: #ffa2a4;
+  position: absolute;
+  left: -15px;
+  top: 8px;
+}
+
+/* Specialization */
+
+.specialization {
+  padding: 50px 0;
 }
 
 @media (max-width: 767px) {
@@ -211,6 +267,9 @@ header {
   }
 }
 @media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
   /* Header */
   .header-container {
     max-width: 768px;
@@ -286,18 +345,31 @@ header {
     padding: 10px 33px;
   }
 
-  /* Call */
-  .call-text {
-    font-size: 50px;
-    margin-bottom: 30px;
+  /* About me */
+
+  .about-me {
+    padding: 170px 0 85px;
+  }
+  .about-me-image {
+    width: 80%;
+    height: 800%;
+  }
+  .about-me-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .call-text-answer {
-    font-size: 50px;
+  .personal-photo {
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 32px;
+  }
   /* Header */
 
   .header-container {
@@ -352,8 +424,61 @@ header {
     font-size: 20px;
     padding: 16px 48px;
   }
+  /* Call */
+  .call-text {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+
+  .call-text-answer {
+    font-size: 50px;
+  }
+  /* About me */
+  .about-me-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .section-title {
+    font-size: 48px;
+  }
+  .about-me-title {
+    margin-bottom: 50px;
+  }
+  .about-me-title::after {
+    width: 703px;
+    height: 3px;
+    border-radius: 12px;
+    bottom: -16px;
+  }
+  .about-me-name {
+    font-size: 40px;
+    margin-bottom: 32px;
+  }
+
+  .skills-list {
+    gap: 20px;
+    width: 600px;
+  }
+  .skills-item {
+    font-size: 30px;
+  }
+
+  .skills-item::before {
+    width: 9px;
+    height: 9px;
+    left: -32px;
+    top: 16px;
+  }
+  /* Specialization */
+  .specialization {
+    padding: 85px 0;
+  }
 }
 @media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
   /* Header */
   .header-container {
     max-width: 1440px;
@@ -382,7 +507,6 @@ header {
     margin-bottom: 51px;
   }
 
-  
   /* Call */
   .call-text {
     font-size: 50px;
@@ -394,7 +518,6 @@ header {
   }
 }
 
-}
 @media screen and (max-width: 1279px) {
   .hero {
     background-image: linear-gradient(

@@ -330,10 +330,18 @@ header {
   text-align: center;
 }
 
+/* Course */
 .course {
   position: relative;
   background-color: rgba(226, 225, 243, 0.71);
   padding: 430px 0 140px;
+}
+
+.course-container {
+  border-radius: 10px;
+  width: 308px;
+  height: 513px;
+  background: #fef8f8;
 }
 
 @media (max-width: 767px) {

@@ -707,41 +707,28 @@ header {
     padding: 72px 96px;
   }
   .course-image {
-    /* max-width: 568px;
-    top: -80px;
-    right: -80px; */
     transform: none;
     max-width: 468px;
     top: -80px;
     right: -80px;
   }
   .course-title {
-    /* font-size: 30px; */
-    /* margin-bottom: 20px; */
     width: 616px;
     margin-bottom: 16px;
     font-size: 20px;
   }
   .course-name {
-    /* font-size: 46px;
-    width: 909px;
-    margin-bottom: 43px; */
     font-size: 32px;
     width: 800px;
     margin-bottom: 72px;
-    /* margin-bottom: 86px; */
   }
   .course-name::after {
     border-radius: 12px;
-    /* width: 932px; */
-    /* height: 3px;
-    bottom: -43px; */
     height: 2px;
     bottom: -36px;
     width: 700px;
   }
   .course-benifits {
-    /* font-size: 30px; */
     font-size: 20px;
     width: 866px;
     margin-bottom: 20px;
@@ -755,12 +742,10 @@ header {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /* gap: 25px; */
   }
   .course-skills {
     font-size: 20px;
     font-weight: 400;
-    /* font-size: 30px; */
     width: 600px;
   }
   .course-element {
@@ -787,8 +772,7 @@ header {
     width: 830px;
     margin-left: 280px;
   }
-  .menu-item {
-  }
+
   .menu-link {
     font-size: 16px;
     padding-top: 67px;
@@ -913,6 +897,77 @@ header {
   .course-icon {
     width: 16px;
     height: 12px;
+  }
+}
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1920px;
+  }
+
+  /* Hero */
+  .hero-container {
+    max-width: 1920px;
+  }
+  .specialization-name {
+    font-size: 48px;
+  }
+
+  .specialization-list {
+    min-width: 1428px;
+    height: 324px;
+  }
+
+  .specialization-item {
+    width: 360px;
+  }
+
+  /* Course */
+
+  .course {
+    padding: 430px 0px 140px;
+  }
+  .course-container {
+    width: 1720px;
+    height: 871px;
+  }
+  .course-image {
+    top: -130px;
+    right: -110px;
+    max-width: 800px;
+    transform: rotate(-0.33deg);
+  }
+  .course-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .course-name {
+    font-size: 46px;
+    margin-bottom: 96px;
+    width: 900px;
+  }
+  .course-name::after {
+    width: 732px;
+    bottom: -46px;
+  }
+  .course-benifits {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  .course-list {
+    gap: 30px;
+  }
+  .course-skills {
+    font-size: 30px;
+    width: 953px;
+  }
+  .course-element {
+    width: 42px;
+    height: 42px;
+  }
+  .course-icon {
+    width: 21px;
+    height: 16px;
   }
 }
 

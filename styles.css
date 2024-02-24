@@ -545,11 +545,14 @@ header {
 
 @media (min-width: 1280px) {
   .container {
-    min-width: 1280px;
+    max-width: 1280px;
     padding: 0 32px;
   }
 
   /* Header */
+  .header-container {
+    max-width: 1280px;
+  }
 
   .page-navigation {
     min-width: 1236px;
@@ -578,7 +581,7 @@ header {
   }
 
   .hero-wrapper {
-    max-width: 580px;
+    max-width: 637px;
     padding: 100px 32px;
   }
 
@@ -631,7 +634,7 @@ header {
     margin-bottom: 50px;
   }
   .about-me-title::after {
-    width: 703px;
+    width: 500px;
     height: 3px;
     border-radius: 12px;
     bottom: -16px;
@@ -785,7 +788,7 @@ header {
   }
   /* Header */
   .header-container {
-    min-width: 1440px;
+    max-width: 1440px;
   }
   .page-navigation {
     min-width: 1360px;
@@ -937,7 +940,7 @@ header {
     padding: 0 245px;
   }
   .header-container {
-    min-width: 1920px;
+    max-width: 1920px;
   }
   .page-navigation {
     min-width: 1920px;

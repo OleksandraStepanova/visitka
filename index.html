@@ -330,23 +330,22 @@
         </footer>
 
 
-        <!-- <div class="mobile-menu-wrapper">
+        <div class="mobile-menu-wrapper ">
             <div class="mobile-menu-modal">
                 <button class="mobile-menu-close-btn" type="button">
                     <svg class="modal-close-icon" width="8" height="8">
-                        <use href="./images/icons.svg#icon-close"></use>
+                        <use href="./image/symbol-defs.svg#icon-cross"></use>
                     </svg>
                 </button>
                 <div class="mobile-menu-page">
                     <nav class="mobile-menu-navigation">
-                        <li class="menu-item"><a class="menu-link-footer" href="./index.html">главная</a></li>
+                        <ul class="mobile-menu">
                             <li class="menu-item"><a class="menu-link-mobile" href="./index.html">главная</a></li>
                             <li class="menu-item"><a class="menu-link-mobile" href="#about-me">обо мне</a></li>
                             <li class="menu-item"><a class="menu-link-mobile" href="#specialization">специализация</a></li>
                             <li class="menu-item"><a class="menu-link-mobile" href="#course">курс</a></li>
                             <li class="menu-item"><a class="menu-link-mobile" href="#price">стоимость</a></li>
-                        </li>
-        
+                        </ul>                                                
                     </nav>
                     <address id="contacts">
                         <ul class="page-contacts">
@@ -404,11 +403,11 @@
                 </div>   
         
             </div>
-    </main> -->
+    </main>
 
 
 
-    <!-- <script>
+     <script>
         const cssClasses = {
             burgerButton: 'burger-menu',
             modal: 'modal-window',
@@ -436,7 +435,12 @@
 
 
         menuButtons.forEach(button => button.addEventListener('click', toggleMenu));
-    </script> -->
+
+        function toggleMenu(event){
+            event.preventDefault();
+            modal.classList.toggle(cssClasses.toggleClass);
+        }
+    </script> 
 
 
 

@@ -135,7 +135,7 @@ header {
   font-family: "Mulish", sans-serif;
   border: 0.86px solid rgba(255, 255, 255, 0.9);
   border-radius: 17px;
-  max-width: 160px;
+  min-width: 160px;
   height: auto;
   box-shadow: 0 2px 2px 0 rgba(61, 61, 63, 0.1);
   background-color: #ffa2a4;
@@ -561,6 +561,137 @@ header {
 }
 .loyalty-text {
 }
+
+/* Conclusion */
+.conclusion {
+  padding: 50px 0 112px;
+}
+.conclusion-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.conclusion-title {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 1.3;
+  text-align: center;
+  color: #3d3d3f;
+  margin-bottom: 8px;
+}
+
+.conclusion-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 1.1;
+  text-align: center;
+  color: rgba(61, 61, 63, 0.75);
+  margin-bottom: 22px;
+}
+.page-button-end {
+  padding: 11px 35px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.55556;
+  text-align: center;
+  color: #fff;
+  width: 270px;
+  border: 1.11px solid rgba(255, 255, 255, 0.3);
+  border-radius: 22px;
+  width: 207px;
+  height: 43px;
+  box-shadow: 0 2px 2px 0 rgba(61, 61, 63, 0.1);
+  background: linear-gradient(178deg, #ffa2a4 0%, #fd695a 100%);
+}
+.page-button-end:hover,
+.page-button-end:focus,
+.page-button-end:active {
+  background-color: #fd695a;
+  background-image: none;
+  font-weight: 700;
+  cursor: pointer;
+  color: #fff;
+}
+/* Footer */
+.page-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 37px;
+}
+.page-footer {
+  padding: 85px 0 22px;
+  background-color: #3d3d3f;
+  position: relative;
+}
+
+.footer-image {
+  position: absolute;
+  /* transform: rotate(-2deg); */
+  top: -73px;
+}
+
+.contacts {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin-left: 10px;
+  font-style: normal;
+}
+
+.mail {
+  text-transform: lowercase;
+}
+.contacts-item {
+  display: flex;
+  align-items: center;
+}
+.icon-contacts {
+  fill: #faf0f0;
+  stroke: #faf0f0;
+}
+
+.menu-link-footer {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.menu-footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 11px;
+  margin-bottom: 28px;
+}
+
+.menu-link-footer {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.social-networks {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 38px;
+}
 @media (max-width: 767px) {
   .menu {
     display: none;
@@ -937,6 +1068,70 @@ header {
     width: 1200px;
     font-size: 16px;
   }
+
+  /* conclusion */
+  .conclusion-text {
+    font-size: 36px;
+  }
+  .page-button-end {
+    font-size: 24px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 40px;
+    width: 374px;
+    height: 79px;
+    padding: 20px 63px;
+  }
+
+  /* Footer */
+
+  .page-footer {
+    padding-top: 53px;
+  }
+  .footer-image {
+    width: 218px;
+    height: 263px;
+    top: -130px;
+  }
+
+  .footer-containet {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: self-start;
+    gap: 50px;
+  }
+
+  .menu-footer {
+    flex-direction: row;
+  }
+
+  .footer-wrapper {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    gap: 60px;
+  }
+
+  .menu-footer {
+    gap: 50px;
+  }
+
+  .social-networks {
+    gap: 70px;
+  }
+
+  .menu-link-footer {
+    font-size: 16px;
+  }
+
+  .social-networks-icon {
+    width: 43px;
+    height: 43px;
+  }
+  .contacts {
+    font-size: 24px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -1119,6 +1314,13 @@ header {
   .price-name::after {
     width: 288px;
   }
+
+  /* Footer */
+  .footer-image {
+    width: calc(436px * 0.8);
+    height: calc(526px * 0.8);
+    top: -220px;
+  }
 }
 @media (min-width: 1920px) {
   .container {
@@ -1272,16 +1474,15 @@ header {
   .price-loyalty {
     gap: 5px;
   }
-  /* .price-item:last-child > .price-wrapper {
-    padding-top: 68px;
+  /* Footer */
+  .footer-image {
+    width: 436px;
+    height: 526px;
+    top: -270px;
   }
-
- 
-  
-  .loyalty {
-    width: 1200px;
-    font-size: 16px;
-  } */
+  .footer-containet {
+    gap: 230px;
+  }
 }
 
 @media screen and (max-width: 340px) {

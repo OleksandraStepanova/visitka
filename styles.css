@@ -704,6 +704,7 @@ header {
     z-index: 99999;
     width: 100%;
     min-height: 100%;
+    bottom: -70px;
     background-color: #3d3d3f;
     transform: translatex(100%);
     padding: 72px 24px 40px 16px;

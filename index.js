@@ -9,7 +9,7 @@
         const burgerMenu = document.querySelector(".mobile-menu-btn");
         const modal = document.querySelector(".mobile-menu-wrapper");
         const closeButton = document.querySelector(".mobile-menu-close-btn");
-        const menuButtons = document.querySelectorAll(".menu-link-mobile");
+        const menuButtons = document.querySelectorAll(".menu-item-mobile");
 
         const toggle = event => {
             event.preventDefault();
@@ -26,9 +26,8 @@
 
         menuButtons.forEach(button => button.addEventListener('click', toggleMenu));
 
-        function toggleMenu(event){
-            event.preventDefault();
-            // menuButtons.href = "./index.html#price";
+        function toggleMenu(){          
+            
             modal.classList.toggle(cssClasses.toggleClass);
             
         }

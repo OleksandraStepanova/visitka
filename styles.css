@@ -990,7 +990,7 @@ header {
     margin-bottom: 50px;
   }
   .about-me-title::after {
-    width: 500px;
+    width: 400px;
     height: 3px;
     border-radius: 12px;
     bottom: -16px;
@@ -1002,7 +1002,7 @@ header {
 
   .skills-list {
     gap: 20px;
-    width: 600px;
+    width: 500px;
   }
   .skills-item {
     font-size: 24px;

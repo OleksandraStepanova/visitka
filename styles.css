@@ -136,7 +136,7 @@ header {
   font-family: "Mulish", sans-serif;
   border: 1.11px solid rgba(255, 255, 255, 0.3);
   border-radius: 22px;
-  width: 207px;
+  min-width: 300px;
   height: auto;
   box-shadow: 0 2px 2px 0 rgba(61, 61, 63, 0.1);
   background-color: #ffa2a4;
@@ -275,7 +275,7 @@ header {
   gap: 30px;
 }
 .specialization-name {
-  max-width: 340px;
+  width: 340px;
 }
 
 .specialization-list {
@@ -436,6 +436,12 @@ header {
   box-shadow: 0 2px 8px 0 rgba(54, 61, 136, 0.06);
 }
 
+.course-icon {
+  width: 9px;
+  height: 7px;
+  fill: #fff;
+}
+
 /* Price */
 .price {
   display: flex;
@@ -516,6 +522,11 @@ header {
   width: 16px;
   height: 16px;
 }
+.price-icon {
+  fill: #fff;
+  width: 8px;
+  height: 6px;
+}
 .benefits-item-point {
   width: 195px;
   font-weight: 500;
@@ -590,7 +601,7 @@ header {
   line-height: 1.1;
   text-align: center;
   color: rgba(61, 61, 63, 0.75);
-  margin-bottom: 22px;
+  margin-bottom: 36px;
 }
 .page-button-end {
   padding: 11px 35px;
@@ -1002,7 +1013,7 @@ header {
     width: 600px;
   }
   .skills-item {
-    font-size: 30px;
+    font-size: 24px;
   }
 
   .skills-item::before {
@@ -1023,7 +1034,7 @@ header {
     /* gap: 30px; */
   }
   .specialization-name {
-    width: 600px;
+    width: 450px;
   }
 
   .specialization-list {
@@ -1054,7 +1065,7 @@ header {
     width: 70px;
     height: 70px;
     padding: 20px;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.3;
   }
 
@@ -1070,20 +1081,21 @@ header {
     padding: 430px 0px 140px;
   }
   .course-wrapper {
-    max-width: 1280px;
+    min-width: 1280px;
     height: 660px;
     padding-top: 80px;
   }
+
   .course-container {
-    width: 1147px;
+    min-width: 1180px;
     height: 580px;
     padding: 72px 96px;
   }
   .course-image {
     transform: none;
-    max-width: 468px;
+    max-width: 368px;
     top: -80px;
-    right: -80px;
+    right: -50px;
   }
   .course-title {
     width: 616px;
@@ -1144,10 +1156,7 @@ header {
     width: 16px;
     height: 16px;
   }
-  .course-icon {
-    width: 10px;
-    height: 8px;
-  }
+
   .price-item:last-child > .price-wrapper {
     padding-top: 68px;
   }
@@ -1181,7 +1190,8 @@ header {
   /* Footer */
 
   .page-footer {
-    padding-top: 53px;
+    padding-top: 28px;
+    padding-bottom: 28px;
   }
   .footer-image {
     width: 218px;
@@ -1206,15 +1216,16 @@ header {
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-end;
-    gap: 60px;
+    gap: 30px;
   }
 
   .menu-footer {
-    gap: 50px;
+    gap: 30px;
+    margin-bottom: 0;
   }
 
   .social-networks {
-    gap: 70px;
+    gap: 50px;
   }
 
   .menu-link-footer {
@@ -1302,13 +1313,13 @@ header {
     flex-direction: row;
     align-items: baseline;
     gap: 112px;
-    min-width: 1376px;
+    min-width: 1176px;
     height: 312px;
   }
 
   .specialization-item {
     width: 336px;
-    font-size: 30px;
+    font-size: 24px;
     letter-spacing: 2px;
   }
   .specialization-item:not(:last-child)::after {
@@ -1339,18 +1350,21 @@ header {
   .course {
     padding: 430px 0px 140px;
   }
+
   .course-wrapper {
-    max-width: 1440px;
+    min-width: 1440px;
     height: 733px;
     padding-top: 80px;
   }
   .course-container {
-    width: 1290px;
+    min-width: 1340px;
     height: 653px;
     padding: 72px 96px;
   }
   .course-image {
-    max-width: 580px;
+    max-width: 468px;
+    top: -80px;
+    right: -50px;
   }
   .course-title {
     font-size: 26px;
@@ -1386,13 +1400,12 @@ header {
     width: 16px;
     height: 16px;
   }
-  .course-icon {
-    width: 10px;
-    height: 8px;
-  }
+
   .benefits-item-point {
+    width: 300px;
     font-size: 18px;
   }
+
   .price-name {
     font-size: 22px;
   }
@@ -1416,6 +1429,25 @@ header {
     width: calc(436px * 0.8);
     height: calc(526px * 0.8);
     top: -220px;
+  }
+  .page-footer {
+    padding-top: 32px;
+  }
+
+  .footer-containet {
+    gap: 80px;
+  }
+
+  .footer-wrapper {
+    gap: 40px;
+  }
+
+  .menu-footer {
+    gap: 40px;
+  }
+
+  .social-networks {
+    gap: 60px;
   }
 }
 @media (min-width: 1920px) {
@@ -1462,9 +1494,6 @@ header {
     font-size: 50px;
   }
 
-  .specialization-item {
-    width: 360px;
-  }
   /* About me */
   .about-me-container {
     gap: 143px;
@@ -1475,6 +1504,11 @@ header {
   .about-me-wrapper {
     width: 703px;
   }
+  /* Specialization */
+  .specialization-item {
+    width: 360px;
+    font-size: 30px;
+  }
 
   /* Course */
 
@@ -1482,12 +1516,12 @@ header {
     padding: 430px 0px 140px;
   }
   .course-wrapper {
-    max-width: 1920px;
+    min-width: 1920px;
     height: 1001px;
     padding-top: 130px;
   }
   .course-container {
-    width: 1720px;
+    min-width: 1720px;
     height: 871px;
   }
   .course-image {
@@ -1535,7 +1569,7 @@ header {
     width: 24px;
     height: 24px;
   }
-  .course-icon {
+  .price-icon {
     width: 11px;
     height: 9px;
   }
@@ -1588,6 +1622,18 @@ header {
   }
   .footer-containet {
     gap: 230px;
+  }
+
+  .footer-wrapper {
+    gap: 50px;
+  }
+
+  .menu-footer {
+    gap: 50px;
+  }
+
+  .social-networks {
+    gap: 70px;
   }
 }
 

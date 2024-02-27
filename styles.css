@@ -1191,7 +1191,7 @@ header {
 
   .page-footer {
     padding-top: 28px;
-    padding-bottom: 28px;
+    padding-bottom: 32px;
   }
   .footer-image {
     width: 218px;
@@ -1402,7 +1402,7 @@ header {
   }
 
   .benefits-item-point {
-    width: 300px;
+    width: 258px;
     font-size: 18px;
   }
 
@@ -1423,12 +1423,10 @@ header {
   .price-name::after {
     width: 288px;
   }
-
-  /* Footer */
   .footer-image {
-    width: calc(436px * 0.8);
-    height: calc(526px * 0.8);
-    top: -220px;
+    width: 318px;
+    height: 383px;
+    top: -200px;
   }
   .page-footer {
     padding-top: 32px;
@@ -1615,9 +1613,12 @@ header {
     gap: 5px;
   }
   /* Footer */
+  .page-footer {
+    padding-bottom: 32px;
+  }
   .footer-image {
-    width: 436px;
-    height: 526px;
+    width: 380px;
+    height: 456px;
     top: -270px;
   }
   .footer-containet {

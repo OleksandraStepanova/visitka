@@ -693,6 +693,24 @@ header {
   flex-direction: row;
   gap: 38px;
 }
+
+.social-networks-icon {
+  fill: #fff;
+}
+
+.icon-contact {
+  fill: #fff;
+}
+
+.icon-contacts-mail {
+  fill: none;
+  stroke: #fff;
+}
+.social-networks-link:hover .social-networks-icon,
+.social-networks-link:focus .social-networks-icon,
+.social-networks-link:active .social-networks-icon {
+  fill: #fd695a;
+}
 @media (max-width: 767px) {
   .menu {
     display: none;

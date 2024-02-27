@@ -1311,7 +1311,7 @@ header {
 
   .specialization-item {
     width: 336px;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 2px;
   }
   .specialization-item:not(:last-child)::after {

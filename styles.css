@@ -1042,7 +1042,7 @@ header {
 
   .specialization-item {
     width: 330px;
-    font-size: 24px;
+    font-size: 20px;
   }
   .specialization-item:not(:last-child)::after {
     border-radius: 20px;

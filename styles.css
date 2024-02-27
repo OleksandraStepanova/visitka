@@ -701,7 +701,7 @@ header {
 .social-networks {
   display: flex;
   align-items: flex-end;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-direction: row;
   gap: 38px;
 }

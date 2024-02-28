@@ -341,17 +341,9 @@ header {
   width: 100%;
   min-width: 340px;
 }
-.course-wrapper {
-  min-width: 280px;
-  height: 575px;
-  overflow: hidden;
-  padding-top: 62px;
-  margin: 0 auto;
-}
 .course-container {
-  position: relative;
   border-radius: 10px;
-  max-width: 308px;
+  width: 308px;
   height: 513px;
   background: #fef8f8;
   margin: 0 auto;
@@ -361,9 +353,9 @@ header {
   z-index: 999;
   position: absolute;
   max-width: 180px;
-  top: -62px;
-  right: -28px;
-  transform: rotate(-8.36deg);
+  top: 390px;
+  right: 0;
+  /* transform: rotate(-8.36deg); */
 }
 .course-title {
   font-style: italic;
@@ -644,7 +636,6 @@ header {
 
 .footer-image {
   position: absolute;
-  /* transform: rotate(-2deg); */
   top: -73px;
 }
 
@@ -897,6 +888,66 @@ header {
   .specialization {
     top: -548px;
   }
+
+  /* Course */
+  .course {
+    padding: 400px 0px 140px;
+  }
+
+  .course-container {
+    width: 580px;
+    height: 580px;
+    padding: 52px 42px;
+  }
+  .course-image {
+    max-width: 268px;
+    top: 340px;
+  }
+  .course-title {
+    width: 416px;
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+  .course-name {
+    font-size: 28px;
+    width: 400px;
+    margin-bottom: 72px;
+  }
+  .course-name::after {
+    border-radius: 12px;
+    height: 2px;
+    bottom: -36px;
+    width: 400px;
+  }
+  .course-benifits {
+    font-size: 16px;
+    width: 466px;
+    margin-bottom: 20px;
+  }
+  .course-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .course-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .course-skills {
+    font-size: 16px;
+    font-weight: 400;
+    width: 400px;
+  }
+  .course-element {
+    width: 24px;
+    height: 24px;
+  }
+
+  .course-icon {
+    width: 12px;
+    height: 10px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1018,18 +1069,16 @@ header {
 
   /* Specialization */
   .specialization {
-    top: -300px;
+    top: -340px;
   }
   .specialization-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* gap: 30px; */
   }
   .specialization-name {
     width: 450px;
   }
-
   .specialization-list {
     padding: 60px 30px;
     flex-direction: row;
@@ -1069,26 +1118,15 @@ header {
   }
 
   /* Course */
-
-  .course {
-    padding: 430px 0px 140px;
-  }
-  .course-wrapper {
-    min-width: 1280px;
-    height: 660px;
-    padding-top: 80px;
-  }
-
   .course-container {
-    min-width: 1180px;
+    width: 1100px;
     height: 580px;
     padding: 72px 96px;
   }
   .course-image {
     transform: none;
-    max-width: 368px;
-    top: -80px;
-    right: -50px;
+    max-width: 418px;
+    top: 360px;
   }
   .course-title {
     width: 616px;
@@ -1111,32 +1149,17 @@ header {
     width: 866px;
     margin-bottom: 20px;
   }
-  .course-item {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  .course-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
+
   .course-skills {
     font-size: 20px;
     font-weight: 400;
     width: 600px;
   }
-  .course-element {
-    width: 24px;
-    height: 24px;
-  }
+
   .course-name-desktop {
     display: none;
   }
-  .course-icon {
-    width: 12px;
-    height: 10px;
-  }
+
   /* price */
   .price-list {
     flex-direction: row;
@@ -1312,7 +1335,7 @@ header {
 
   .specialization-item {
     width: 336px;
-    font-size: 20px;
+    font-size: 22px;
     letter-spacing: 2px;
   }
   .specialization-item:not(:last-child)::after {
@@ -1341,14 +1364,9 @@ header {
   /* Course */
 
   .course {
-    padding: 430px 0px 140px;
+    padding: 330px 0px 160px;
   }
 
-  .course-wrapper {
-    min-width: 1440px;
-    height: 733px;
-    padding-top: 80px;
-  }
   .course-container {
     min-width: 1340px;
     height: 653px;
@@ -1356,8 +1374,8 @@ header {
   }
   .course-image {
     max-width: 468px;
-    top: -80px;
-    right: -50px;
+
+    top: 230px;
   }
   .course-title {
     font-size: 26px;
@@ -1506,20 +1524,14 @@ header {
   .course {
     padding: 430px 0px 140px;
   }
-  .course-wrapper {
-    min-width: 1920px;
-    height: 1001px;
-    padding-top: 130px;
-  }
+
   .course-container {
     min-width: 1720px;
     height: 871px;
   }
   .course-image {
-    top: -130px;
-    right: -110px;
-    max-width: 800px;
-    transform: rotate(-0.33deg);
+    top: 300px;
+    max-width: 760px;
   }
   .course-title {
     font-size: 30px;

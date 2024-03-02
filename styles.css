@@ -834,9 +834,7 @@ header {
   .menu-link:active {
     color: #fd695a;
   }
-  .menu-item:first-child .menu-link {
-    color: #fd695a;
-  }
+
   .mobile-menu {
     display: none;
   }
